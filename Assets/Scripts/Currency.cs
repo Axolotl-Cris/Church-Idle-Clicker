@@ -21,11 +21,11 @@ public class Currency : MonoBehaviour {
         PlayerPrefs.SetInt("MonkLvl", _monkLvl);
     }
 
-    // void Update() {
-    //    faithAmountText.text = _faithAmount.ToString("You have 0 Faith");
-    // }
+    void Update() { 
+        faithAmountText.text = _faithAmount.ToString("You have 0 Faith");
+    }
     
-    public int CupcakeAmount {
+    public int FaithAmount {
         get => this._faithAmount;
         set {
             _faithAmount = value;
