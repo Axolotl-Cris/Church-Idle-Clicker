@@ -6,10 +6,10 @@ public class QuitButton : MonoBehaviour {
     
     public int faithAmount;
     void Start() {
-        faithAmount = PlayerPrefs.GetInt("Cupcakes", 0);
+        faithAmount = PlayerPrefs.GetInt("Faith", 0);
     }
 
     void OnDestroy() {
-        PlayerPrefs.SetInt("Cupcakes", faithAmount);
+        PlayerPrefs.SetInt("Faith", faithAmount);
     }
 }
