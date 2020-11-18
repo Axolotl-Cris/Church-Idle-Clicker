@@ -33,10 +33,9 @@ public class Producer : MonoBehaviour {
     }
 
     int Level {
-        get => PlayerPrefs.GetInt("Lvl", 0);
-        set
-        {
-            PlayerPrefs.SetInt("Lvl", value);
+        get => PlayerPrefs.GetInt(this.productionUnit.name, 0);
+        set {
+            PlayerPrefs.SetInt(this.productionUnit.name, value);
             UpdateLevelText();
         }
     }
