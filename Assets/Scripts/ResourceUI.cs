@@ -6,7 +6,7 @@ public class ResourceUI : MonoBehaviour {
     public Resource resource;
 
     void UpdateAmountLabel() {
-        this.amountText.text = this.resource.ResourcesOwned.ToString($"0 {this.resource.name}");
+        this.amountText.text = this.resource.ResourcesOwned.ToString("0");
     }
 
     void Update() {
