@@ -16,3 +16,4 @@ MonoBehaviour:
   cost: 300
   productionTime: 1
   lvl: 0
+  onClickBoost: 0

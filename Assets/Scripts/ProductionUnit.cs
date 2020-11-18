@@ -6,5 +6,5 @@ public class ProductionUnit : ScriptableObject {
     public int cost = 100;
     public float productionTime = 1f;
     public int lvl = 0;
-    public int onClickBoost = 0;
+    public int perClickIncrease = 0;
 }
