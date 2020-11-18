@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f1e61d4adfa0843a136be049303594, type: 3}
   m_Name: Monk
   m_EditorClassIdentifier: 
-  resourcesProduced: 1
-  cost: 50000
-  productionTime: 1
+  resourcesProduced: 0
+  cost: 100
+  productionTime: 0
   lvl: 0
+  onClickBoost: 10

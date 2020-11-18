@@ -10,14 +10,14 @@ public class Producer : MonoBehaviour {
     private float _elapsedTime;
 
     public Resource resource;
-    
+
     void Start() {
         currentLevelText.text = productionUnit.lvl.ToString();
         costText.text = productionUnit.cost.ToString();
         gainText.text = productionUnit.resourcesProduced.ToString();
         UpdateLevelText();
     }
-    
+
     void Update() {
         this._elapsedTime += Time.deltaTime;
         if (this._elapsedTime >= this.productionUnit.productionTime) {
@@ -25,19 +25,22 @@ public class Producer : MonoBehaviour {
             this._elapsedTime -= this.productionUnit.productionTime;
         }
     }
-    
+
     void ProduceFaith() {
         resource.ResourcesOwned += this.productionUnit.resourcesProduced * this.Level;
+        Debug.Log(this.productionUnit.resourcesProduced + " resources produced");
+        Debug.Log(this.Level + " level"); 
     }
-    
+
     int Level {
         get => PlayerPrefs.GetInt("Lvl", 0);
-        set {
+        set
+        {
             PlayerPrefs.SetInt("Lvl", value);
             UpdateLevelText();
         }
     }
-    
+
     void UpdateLevelText() {
         this.currentLevelText.text = this.Level.ToString($"Lvl 0");
     }
@@ -48,4 +51,12 @@ public class Producer : MonoBehaviour {
             this.Level += 1;
         }
     }
-}
+
+    public void OnClickBoost() {
+        if (resource.ResourcesOwned >= this.productionUnit.cost) {
+            resource.ResourcesOwned -= this.productionUnit.cost;
+            resource.gainPerClick += this.productionUnit.onClickBoost;
+            this.Level += 1;
+        }
+    }
+}      
