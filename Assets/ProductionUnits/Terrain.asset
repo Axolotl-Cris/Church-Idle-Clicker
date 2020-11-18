@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Terrain
   m_EditorClassIdentifier: 
   resourcesProduced: 10
-  cost: 300
+  originalCost: 800
+  costMultiplier: 1.1
   productionTime: 1
   lvl: 0
-  onClickBoost: 0
+  perClickIncrease: 0
+  productionMultiplier: 1.05

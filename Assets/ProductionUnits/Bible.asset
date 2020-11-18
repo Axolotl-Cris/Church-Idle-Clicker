@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Bible
   m_EditorClassIdentifier: 
   resourcesProduced: 1
-  cost: 100
+  originalCost: 100
+  costMultiplier: 1.1
   productionTime: 1
   lvl: 0
+  perClickIncrease: 0
+  productionMultiplier: 1.05

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Church
   m_EditorClassIdentifier: 
   resourcesProduced: 5
-  cost: 200
+  originalCost: 300
+  costMultiplier: 1.1
   productionTime: 1
   lvl: 0
   perClickIncrease: 0
+  productionMultiplier: 1.05
