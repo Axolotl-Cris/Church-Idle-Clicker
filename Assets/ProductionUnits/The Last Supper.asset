@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: The Last Supper
   m_EditorClassIdentifier: 
   resourcesProduced: 20
-  costs: 1000
+  cost: 800
+  productionTime: 1
+  lvl: 0

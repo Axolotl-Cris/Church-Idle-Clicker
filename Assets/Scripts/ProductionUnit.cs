@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu]
-public class Production : ScriptableObject {
+public class ProductionUnit : ScriptableObject {
     public int resourcesProduced = 1;
-    public int costs = 100;
+    public int cost = 100;
     public float productionTime = 1f;
+    public int lvl = 0;
 }

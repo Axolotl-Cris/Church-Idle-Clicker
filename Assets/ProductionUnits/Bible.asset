@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Bible
   m_EditorClassIdentifier: 
   resourcesProduced: 1
-  costs: 100
+  cost: 100
+  productionTime: 1
+  lvl: 0

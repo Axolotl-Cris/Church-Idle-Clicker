@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: daf7d510c6530524cacc1eb34cf8a643
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - productionUnit: {instanceID: 0}
+  - currentLevelText: {instanceID: 0}
+  - costText: {instanceID: 0}
+  - gainText: {instanceID: 0}
+  - buttonImage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

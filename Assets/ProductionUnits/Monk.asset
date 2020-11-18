@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3f1e61d4adfa0843a136be049303594, type: 3}
-  m_Name: Church
+  m_Name: Monk
   m_EditorClassIdentifier: 
-  resourcesProduced: 5
-  cost: 150
+  resourcesProduced: 1
+  cost: 50
   productionTime: 1
   lvl: 0
