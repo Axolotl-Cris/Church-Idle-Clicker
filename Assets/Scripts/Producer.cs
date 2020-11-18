@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Producer : MonoBehaviour
-{
+public class Producer : MonoBehaviour {
     public ProductionUnit productionUnit;
     public Text currentLevelText;
     public Text costText;
     public Text gainText;
 
     private float _elapsedTime;
+
+    public Resource resource;
     
-    void Start()
-    {
+    void Start() {
         currentLevelText.text = productionUnit.lvl.ToString();
         costText.text = productionUnit.cost.ToString();
         gainText.text = productionUnit.resourcesProduced.ToString();
@@ -27,8 +27,7 @@ public class Producer : MonoBehaviour
     }
     
     void ProduceFaith() {
-        var faith = FindObjectOfType<Resource>();
-        faith.ResourcesOwned += this.productionUnit.resourcesProduced * this.Level;
+        resource.ResourcesOwned += this.productionUnit.resourcesProduced * this.Level;
     }
     
     int Level {
@@ -42,13 +41,11 @@ public class Producer : MonoBehaviour
     void UpdateLevelText() {
         this.currentLevelText.text = this.Level.ToString($"Lvl 0");
     }
- 
+
     public void LvlUp() {
-        var faith = FindObjectOfType<Resource>();
-        if (faith.ResourcesOwned >= this.productionUnit.cost) {
-            faith.ResourcesOwned -= this.productionUnit.cost;
+        if (resource.ResourcesOwned >= this.productionUnit.cost) {
+            resource.ResourcesOwned -= this.productionUnit.cost;
             this.Level += 1;
         }
     }
-
 }

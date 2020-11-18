@@ -763,7 +763,6 @@ GameObject:
   m_Component:
   - component: {fileID: 359734608}
   - component: {fileID: 359734607}
-  - component: {fileID: 359734609}
   m_Layer: 0
   m_Name: ButtonManager
   m_TagString: Untagged
@@ -797,22 +796,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &359734609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359734606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daf7d510c6530524cacc1eb34cf8a643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productionUnit: {fileID: 0}
-  currentLevelText: {fileID: 0}
-  costText: {fileID: 0}
-  gainText: {fileID: 0}
 --- !u!1 &386980047
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +882,7 @@ MonoBehaviour:
   currentLevelText: {fileID: 195582960}
   costText: {fileID: 1344712470}
   gainText: {fileID: 1430319213}
+  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &494237138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,6 +1227,7 @@ MonoBehaviour:
   currentLevelText: {fileID: 1564072874}
   costText: {fileID: 596619148}
   gainText: {fileID: 228649552}
+  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &663284611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +1852,7 @@ MonoBehaviour:
   currentLevelText: {fileID: 682655494}
   costText: {fileID: 80933545}
   gainText: {fileID: 1007075281}
+  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &893380817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,6 +2370,7 @@ MonoBehaviour:
   currentLevelText: {fileID: 1770993894}
   costText: {fileID: 1226588769}
   gainText: {fileID: 2087381064}
+  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &1064592158
 GameObject:
   m_ObjectHideFlags: 0
@@ -2554,6 +2541,7 @@ MonoBehaviour:
   currentLevelText: {fileID: 1178276684}
   costText: {fileID: 1036636237}
   gainText: {fileID: 1012028500}
+  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &1178276682
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Monk
   m_EditorClassIdentifier: 
   resourcesProduced: 1
-  cost: 50
+  cost: 50000
   productionTime: 1
   lvl: 0
