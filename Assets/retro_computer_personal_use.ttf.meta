@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 60d83da6e8e5a8340aca0d871366b151
+guid: 4039b39d00e6d3b4cbc231690b375bff
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,9 +9,8 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Church Game Font
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: ee6284b3837ae634b9c7a89d6210e6a1, type: 3}
+  - Retro Computer
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
