@@ -9,7 +9,7 @@ public class Producer : MonoBehaviour {
     private float _elapsedTime;
     public Resource resource;
 
-    private bool CanGetUpgrades => resource.ResourcesOwned >= productionUnit.originalCost;
+    private bool CanGetUpgrades => resource.ResourcesOwned >= productionUnit.CurrentCost(this.Level);
 
     void Start() {
         currentLevelText.text = productionUnit.lvl.ToString("LVL 0");
