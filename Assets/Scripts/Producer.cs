@@ -12,10 +12,10 @@ public class Producer : MonoBehaviour {
     private float _elapsedTime;
     public Resource resource;
 
-    private bool CanGetUpgrades => resource.ResourcesOwned >= productionUnit.CurrentCost(this.Level);
+    private bool CanGetUpgrades => productionUnit.costResource.ResourcesOwned >= productionUnit.CurrentCost(this.Level);
 
     void Start() {
-        currentLevelText.text = productionUnit.lvl.ToString("LVL 0");
+        currentLevelText.text = this.Level.ToString("LVL 0");
         costText.text = $"{productionUnit.CurrentCost(this.Level)}";
         gainText.text = $"+{productionUnit.CurrentProduction(this.Level)}/SEC";
         perClickText.text = resource.gainPerClick.ToString("+0/CLICK");
@@ -39,7 +39,7 @@ public class Producer : MonoBehaviour {
     }
     
     void ProduceFaith() {
-        resource.ResourcesOwned += Mathf.RoundToInt(this.productionUnit.resourcesProduced * this.Level);
+        productionUnit.productionResourse.ResourcesOwned += Mathf.RoundToInt(this.productionUnit.resourcesProduced * this.Level);
     }
 
     int Level {
@@ -55,8 +55,8 @@ public class Producer : MonoBehaviour {
     }
 
     public void LvlUp() {
-        if (resource.ResourcesOwned >= productionUnit.CurrentCost(this.Level)) {
-            resource.ResourcesOwned -= productionUnit.CurrentCost(this.Level);
+        if (productionUnit.costResource.ResourcesOwned >= productionUnit.CurrentCost(this.Level)) {
+            productionUnit.costResource.ResourcesOwned -= productionUnit.CurrentCost(this.Level);
             this.Level += 1;
             costText.text = $"{productionUnit.CurrentCost(this.Level)}";
             gainText.text = $"+{productionUnit.CurrentProduction(this.Level)}/SEC";
@@ -64,8 +64,8 @@ public class Producer : MonoBehaviour {
     }
 
     public void OnClickBoost() {
-        if (resource.ResourcesOwned >= productionUnit.CurrentCost(this.Level)) {
-            resource.ResourcesOwned -= productionUnit.CurrentCost(this.Level);
+        if (productionUnit.costResource.ResourcesOwned >= productionUnit.CurrentCost(this.Level)) {
+            productionUnit.costResource.ResourcesOwned -= productionUnit.CurrentCost(this.Level);
             resource.gainPerClick += this.productionUnit.perClickIncrease;
             this.Level += 1;
             costText.text = $"{productionUnit.CurrentCost(this.Level)}";
