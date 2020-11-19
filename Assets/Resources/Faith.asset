@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02cb00cace78d845be6a9b049dca82a, type: 3}
   m_Name: Faith
   m_EditorClassIdentifier: 
-  gainPerClick: 5
+  gainPerClick: 3

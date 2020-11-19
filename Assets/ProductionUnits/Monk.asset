@@ -17,5 +17,4 @@ MonoBehaviour:
   costMultiplier: 1.1
   productionTime: 0
   lvl: 0
-  perClickIncrease: 5
-  productionMultiplier: 0
+  perClickIncrease: 2

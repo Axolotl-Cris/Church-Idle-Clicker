@@ -13,8 +13,8 @@ public class Producer : MonoBehaviour {
 
     void Start() {
         currentLevelText.text = productionUnit.lvl.ToString("LVL 0");
-        costText.text = $"{productionUnit.CurrentCost(this.Level)} FAITH";
-        gainText.text = productionUnit.resourcesProduced.ToString("+0 FAITH/S");
+        costText.text = $"{productionUnit.CurrentCost(this.Level)}";
+        gainText.text = productionUnit.resourcesProduced.ToString("+0 /SEC");
         UpdateLevelText();
     }
 
@@ -46,7 +46,7 @@ public class Producer : MonoBehaviour {
         if (resource.ResourcesOwned >= productionUnit.CurrentCost(this.Level)) {
             resource.ResourcesOwned -= productionUnit.CurrentCost(this.Level);
             this.Level += 1;
-            costText.text = $"{productionUnit.CurrentCost(this.Level)} FAITH";
+            costText.text = $"{productionUnit.CurrentCost(this.Level)}";
         }
     }
 
@@ -55,7 +55,7 @@ public class Producer : MonoBehaviour {
             resource.ResourcesOwned -= productionUnit.CurrentCost(this.Level);
             resource.gainPerClick += this.productionUnit.perClickIncrease;
             this.Level += 1;
-            costText.text = $"{productionUnit.CurrentCost(this.Level)} FAITH";
+            costText.text = $"{productionUnit.CurrentCost(this.Level)}";
         }
     }
 }      
