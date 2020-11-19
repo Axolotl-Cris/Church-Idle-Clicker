@@ -13,5 +13,9 @@ public class ProductionUnit : ScriptableObject {
     public int CurrentCost(int level) {
         var result = this.originalCost * Mathf.Pow(this.costMultiplier, level);
         return Mathf.RoundToInt(result);
+    }    
+    public int CurrentProduction(int level) {
+        var result = this.resourcesProduced * level;
+        return Mathf.RoundToInt(result);
     }
 }
