@@ -7,6 +7,7 @@ public class Producer : MonoBehaviour {
     public Text costText;
     public Text gainText;
     public Text perClickText;
+    public Button upgradeButton;
     
     private float _elapsedTime;
     public Resource resource;
@@ -30,8 +31,10 @@ public class Producer : MonoBehaviour {
         
         if (CanGetUpgrades) {
             costText.color = new Color(18f/255f, 18f/255f, 18f/255f);
+            upgradeButton.interactable = true;
         } else { 
             costText.color = new Color(50f/255f, 50f/255f, 50f/255f);
+            upgradeButton.interactable = false;
         }
     }
     
