@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class Producer : MonoBehaviour {
     public ProductionUnit productionUnit;
+    
     public Text currentLevelText;
     public Text costText;
     public Text gainText;
@@ -10,7 +11,6 @@ public class Producer : MonoBehaviour {
     public Button upgradeButton;
     
     private float _elapsedTime;
-    public Resource resource;
 
     private bool CanGetUpgrades => productionUnit.costResource.ResourcesOwned >= productionUnit.CurrentCost(this.Level);
 
@@ -18,7 +18,7 @@ public class Producer : MonoBehaviour {
         currentLevelText.text = this.Level.ToString("LVL 0");
         costText.text = $"{productionUnit.CurrentCost(this.Level)}";
         gainText.text = $"+{productionUnit.CurrentProduction(this.Level)}/SEC";
-        perClickText.text = resource.gainPerClick.ToString("+0/CLICK");
+        perClickText.text = productionUnit.costResource.gainPerClick.ToString("+0/CLICK");
         UpdateLevelText();
     }
 
@@ -66,10 +66,10 @@ public class Producer : MonoBehaviour {
     public void OnClickBoost() {
         if (productionUnit.costResource.ResourcesOwned >= productionUnit.CurrentCost(this.Level)) {
             productionUnit.costResource.ResourcesOwned -= productionUnit.CurrentCost(this.Level);
-            resource.gainPerClick += this.productionUnit.perClickIncrease;
+            productionUnit.costResource.gainPerClick += this.productionUnit.perClickIncrease;
             this.Level += 1;
             costText.text = $"{productionUnit.CurrentCost(this.Level)}";
-            perClickText.text = resource.gainPerClick.ToString("+0/CLICK");
+            perClickText.text = productionUnit.costResource.gainPerClick.ToString("+0/CLICK");
         }
     }
 }      
