@@ -16,6 +16,6 @@ MonoBehaviour:
   originalCost: 100
   costMultiplier: 1.1
   productionTime: 0
-  productionResourse: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
+  productionResource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
   resourcesProduced: 0
   perClickIncrease: 2

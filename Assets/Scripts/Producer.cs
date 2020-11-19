@@ -39,7 +39,7 @@ public class Producer : MonoBehaviour {
     }
     
     void ProduceFaith() {
-        productionUnit.productionResourse.ResourcesOwned += Mathf.RoundToInt(this.productionUnit.resourcesProduced * this.Level);
+        productionUnit.productionResource.ResourcesOwned += Mathf.RoundToInt(this.productionUnit.resourcesProduced * this.Level);
     }
 
     int Level {

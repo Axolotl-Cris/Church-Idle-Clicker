@@ -1133,7 +1133,6 @@ MonoBehaviour:
   gainText: {fileID: 424187911}
   perClickText: {fileID: 1291090562}
   upgradeButton: {fileID: 321927878}
-  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &494108234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,7 +1747,6 @@ MonoBehaviour:
   gainText: {fileID: 1737905696}
   perClickText: {fileID: 1291090562}
   upgradeButton: {fileID: 663284613}
-  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &663284611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,7 +2614,6 @@ MonoBehaviour:
   gainText: {fileID: 1007075281}
   perClickText: {fileID: 1007075281}
   upgradeButton: {fileID: 180689564}
-  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &877446266
 GameObject:
   m_ObjectHideFlags: 0
@@ -3280,7 +3277,6 @@ MonoBehaviour:
   gainText: {fileID: 1474958765}
   perClickText: {fileID: 1291090562}
   upgradeButton: {fileID: 142053383}
-  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &1064592158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,7 +3449,6 @@ MonoBehaviour:
   gainText: {fileID: 970295993}
   perClickText: {fileID: 1291090562}
   upgradeButton: {fileID: 1597409288}
-  resource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
 --- !u!1 &1253022417
 GameObject:
   m_ObjectHideFlags: 0

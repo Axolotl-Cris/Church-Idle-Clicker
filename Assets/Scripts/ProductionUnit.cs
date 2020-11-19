@@ -3,12 +3,12 @@
 [CreateAssetMenu]
 public class ProductionUnit : ScriptableObject {
     public Resource costResource;
-    [SerializeField] int originalCost = 100;
-    [SerializeField] float costMultiplier = 1.1f;
+    [SerializeField] public int originalCost = 100;
+    [SerializeField] public float costMultiplier = 1.1f;
     public float productionTime = 1f;
-    public Resource productionResourse;
+    public Resource productionResource;
     public int resourcesProduced = 2;
-    public int perClickIncrease = 0;
+    public int perClickIncrease;
     
     public int CurrentCost(int level) {
         var result = this.originalCost * Mathf.Pow(this.costMultiplier, level);
