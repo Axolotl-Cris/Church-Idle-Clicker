@@ -31,6 +31,10 @@ public class Producer : MonoBehaviour {
         if (CanGetUpgrades) {
             costText.color = Color.black;
             gainText.color = Color.black;
+            perClickText.color = Color.black;
+            currentLevelText.color = Color.black;
+        } else {
+            costText.color = Color.red;
         }
     }
     
