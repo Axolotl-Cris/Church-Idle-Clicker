@@ -6,15 +6,17 @@ public class Producer : MonoBehaviour {
     public Text currentLevelText;
     public Text costText;
     public Text gainText;
-
     private float _elapsedTime;
-
     public Resource resource;
+
+    private bool CanGetUpgrades => resource.ResourcesOwned >= productionUnit.originalCost;
 
     void Start() {
         currentLevelText.text = productionUnit.lvl.ToString("LVL 0");
         costText.text = $"{productionUnit.CurrentCost(this.Level)}";
         gainText.text = productionUnit.resourcesProduced.ToString("+0 /SEC");
+        costText.color = Color.red;
+        gainText.color = Color.red;
         UpdateLevelText();
     }
 
@@ -23,6 +25,14 @@ public class Producer : MonoBehaviour {
         if (this._elapsedTime >= this.productionUnit.productionTime) {
             ProduceFaith();
             this._elapsedTime -= this.productionUnit.productionTime;
+        }
+        
+        if (CanGetUpgrades) {
+            costText.color = Color.black;
+            gainText.color = Color.black;
+        } else if (!CanGetUpgrades) {
+            costText.color = Color.red;
+            gainText.color = Color.red;
         }
     }
     
