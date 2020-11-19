@@ -29,12 +29,9 @@ public class Producer : MonoBehaviour {
         }
         
         if (CanGetUpgrades) {
-            costText.color = Color.black;
-            gainText.color = Color.black;
-            perClickText.color = Color.black;
-            currentLevelText.color = Color.black;
-        } else {
-            costText.color = Color.red;
+            costText.color = new Color(18f/255f, 18f/255f, 18f/255f);
+        } else { 
+            costText.color = new Color(50f/255f, 50f/255f, 50f/255f);
         }
     }
     
