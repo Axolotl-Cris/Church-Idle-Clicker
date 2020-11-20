@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Monk
   m_EditorClassIdentifier: 
   costResource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
-  originalCost: 100
-  costMultiplier: 1.1
+  originalCost: 15
+  costMultiplier: 1.3
   productionTime: 0
   productionResource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
   resourcesProduced: 0

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Bible
   m_EditorClassIdentifier: 
   costResource: {fileID: 11400000, guid: 33d532aeb92e27346a28c244ecdf2c04, type: 2}
-  originalCost: 100
-  costMultiplier: 1.1
+  originalCost: 50
+  costMultiplier: 1.3
   productionTime: 1
   productionResource: {fileID: 11400000, guid: 46b3495119f889b4798ccb9624567695, type: 2}
   resourcesProduced: 2

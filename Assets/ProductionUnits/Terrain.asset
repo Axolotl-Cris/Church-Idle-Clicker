@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Terrain
   m_EditorClassIdentifier: 
   costResource: {fileID: 11400000, guid: 46b3495119f889b4798ccb9624567695, type: 2}
-  originalCost: 800
-  costMultiplier: 1.1
+  originalCost: 300
+  costMultiplier: 1.5
   productionTime: 1
   productionResource: {fileID: 11400000, guid: 46b3495119f889b4798ccb9624567695, type: 2}
-  resourcesProduced: 10
+  resourcesProduced: 3
   perClickIncrease: 0
