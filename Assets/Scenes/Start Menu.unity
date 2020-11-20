@@ -678,6 +678,7 @@ GameObject:
   - component: {fileID: 1069889526}
   - component: {fileID: 1069889528}
   - component: {fileID: 1069889525}
+  - component: {fileID: 1069889529}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -717,7 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ecb09724b57bdb4594e3d8671fa60ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logoText: {fileID: 1127190451}
+  creditsText: {fileID: 1127190451}
 --- !u!114 &1069889526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,6 +783,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 100, y: 100}
   m_EdgeRadius: 0
+--- !u!114 &1069889529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069889523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1069889525}
+          m_TargetAssemblyTypeName: Credits, Assembly-CSharp
+          m_MethodName: ShowCreds
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1069889525}
+          m_TargetAssemblyTypeName: Credits, Assembly-CSharp
+          m_MethodName: HideCreds
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1123568593
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +920,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1127190452
 RectTransform:
   m_ObjectHideFlags: 0
@@ -891,8 +937,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 316, y: -113}
-  m_SizeDelta: {x: 449.9702, y: 333.67328}
+  m_AnchoredPosition: {x: 331, y: -113}
+  m_SizeDelta: {x: 479.8958, y: 333.67328}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1127190453
 MonoBehaviour:
@@ -907,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.07058824, g: 0.07058824, b: 0.07058824, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

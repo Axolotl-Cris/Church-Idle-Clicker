@@ -1,28 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class Credits : MonoBehaviour
 {
 
-    public GameObject logoText;
+    public GameObject creditsText;
 
-    public void Start()
+    public void ShowCreds()
     {
-        logoText.SetActive(false);
+        creditsText.SetActive(true);
     }
-
-    public void OnMouseOver()
+    public void HideCreds()
     {
-        logoText.SetActive(true);
-        Debug.Log("Mouse is over GameObject.");
-    }
-
-    public void OnMouseExit()
-    {
-        logoText.SetActive(false);
-        Debug.Log("Mouse is no longer on GameObject.");
+        creditsText.SetActive(false);
     }
 
 }
